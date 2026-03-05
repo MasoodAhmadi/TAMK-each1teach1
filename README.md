@@ -50,37 +50,6 @@ docker-compose exec -T server node manage createUsers <<< '
 ## Create teacher
 
 ```
-docker-compose exec -T server node manage createUsers <<< '
-{
-	"firstName": "firstname",
-	"lastName": "lastname",
-	"email": "firstname.lastname@tuni.fi",
-	"password": "?????",
-	"roles": ["teacher"]
-}'
-```
-
-```
-docker-compose exec -T server node manage createUsers <<< '
-{
-	"firstName": "firstname",
-	"lastName": "lastname",
-	"email": "firstname.lastname@tuni.fi",
-	"password": "?????",
-	"roles": ["teacher"]
-}'
-```
-
-```
-docker-compose exec -T server node manage createUsers <<< '
-{
-	"firstName": "firstname",
-	"lastName": "lastname",
-	"email": "firstname.lastname@tuni.fi",
-	"password": "?????",
-	"roles": ["teacher"]
-}'
-```
 
 ## Create student
 
@@ -174,25 +143,10 @@ docker-compose exec server migrate up
 
 Usage: manage.js <command>
 
-Ella management CLI
-
 Options:
 -h, --help display help for command
 
-Commands:
-createSuperuser Create user with superuser role.
-changePassword <email> Change password.
-createUsers Create user(s) from json input
-refreshLocalizations Fetch localizations from Lokki and update database
-getLocalizationFromLokki <locale> Fetch new localizations from Lokki by locale
-refreshRealizations [path] Fetch realizations from sources and update database
-createOrganization Create organization from json input
-getOrganization <path> Get organization by path as json output
-updateOrganization <path> Update organization from json input
-createRealizationType <path> Create RealizationType from json input
-createRealizationSource <path> Create RealizationSource from json input
-updateSeo Update search engine optimization files
-help [command] display help for command
+
 
 ```
 
